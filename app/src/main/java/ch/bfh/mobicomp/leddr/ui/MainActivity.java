@@ -182,9 +182,9 @@ public class MainActivity extends BootstrapFragmentActivity {
             case android.R.id.home:
                 //menuDrawer.toggleMenu();
                 return true;
-            case R.id.timer:
+            /*case R.id.timer:
                 navigateToTimer();
-                return true;
+                return true;*/
             default:
                 return super.onOptionsItemSelected(item);
         }

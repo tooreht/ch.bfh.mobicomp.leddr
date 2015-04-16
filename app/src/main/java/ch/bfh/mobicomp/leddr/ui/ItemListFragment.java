@@ -156,9 +156,9 @@ public abstract class ItemListFragment<E> extends Fragment
             return false;
         }
         switch (item.getItemId()) {
-            case id.refresh:
+            /*case id.refresh:
                 forceRefresh();
-                return true;
+                return true;*/
             case R.id.logout:
                 logout();
                 return true;

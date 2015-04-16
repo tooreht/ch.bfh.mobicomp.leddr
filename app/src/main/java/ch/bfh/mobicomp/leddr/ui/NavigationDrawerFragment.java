@@ -108,7 +108,12 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.id.text1,
                 new String[] {
                         getString(R.string.title_home),
-                        getString(R.string.title_timer)
+                        getString(R.string.title_timer),
+                        "Unit",
+                        "Color",
+                        "Time",
+                        "Installation",
+                        "About"
                 }));
         drawerListView.setItemChecked(currentSelectedPosition, true);
         return drawerListView;
