@@ -58,6 +58,8 @@ public class MainActivity extends BootstrapFragmentActivity {
             setContentView(R.layout.main_activity);
         }
 
+        setTitle(R.string.title_home);
+
         // View injection with Butterknife
         ButterKnife.inject(this);
 
