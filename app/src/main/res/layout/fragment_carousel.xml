@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:background="@color/pager_background"
@@ -12,6 +13,7 @@
             android:layout_height="wrap_content"
             textColor="@color/text_light"
             android:background="@drawable/stripe_repeat"
+            app:footerColor="#f41515"
             />
 
     <android.support.v4.view.ViewPager
