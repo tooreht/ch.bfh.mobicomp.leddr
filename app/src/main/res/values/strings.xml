@@ -51,5 +51,8 @@
     <string name="unit">Power</string>
     <string name="powerButton">ON/OFF</string>
 
-
+    <!-- About -->
+    <string name="aboutTitle">About</string>
+    <string name="aboutText">Copyright by the LEDDR Group. LEDDR is some serious stuff made to enjoy the leds in their whole awesomeness. Please send error reports to
+https://github.com/tooreht/ch.bfh.mobicomp.leddr</string>
 </resources>

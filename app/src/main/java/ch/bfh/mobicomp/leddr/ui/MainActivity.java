@@ -4,6 +4,7 @@ package ch.bfh.mobicomp.leddr.ui;
 
 import android.accounts.OperationCanceledException;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.Toast;
 
 import ch.bfh.mobicomp.leddr.BootstrapServiceProvider;
 import ch.bfh.mobicomp.leddr.R;
@@ -136,7 +138,6 @@ public class MainActivity extends BootstrapFragmentActivity {
     private void initScreen() {
         if (userHasAuthenticated) {
 
-            Ln.d("Foo");
             final FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.container, new CarouselFragment())
@@ -197,6 +198,11 @@ public class MainActivity extends BootstrapFragmentActivity {
         startActivity(i);
     }
 
+    private void navigateToAbout() {
+       final Intent i = new Intent(this, AboutActivity.class);
+        startActivity(i);
+    }
+
     @Subscribe
     public void onNavigationItemSelected(NavItemSelectedEvent event) {
 
@@ -210,6 +216,10 @@ public class MainActivity extends BootstrapFragmentActivity {
             case 1:
                 // Timer
                 navigateToTimer();
+                break;
+            case 6:
+                // About
+                navigateToAbout();
                 break;
         }
     }
