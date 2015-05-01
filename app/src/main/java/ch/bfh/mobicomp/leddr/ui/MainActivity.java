@@ -1,5 +1,3 @@
-
-
 package ch.bfh.mobicomp.leddr.ui;
 
 import android.accounts.OperationCanceledException;
@@ -8,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
@@ -73,7 +71,7 @@ public class MainActivity extends BootstrapFragmentActivity {
             drawerToggle = new ActionBarDrawerToggle(
                     this,                    /* Host activity */
                     drawerLayout,           /* DrawerLayout object */
-                    R.drawable.ic_drawer,    /* nav drawer icon to replace 'Up' caret */
+//                    R.drawable.ic_drawer,    /* nav drawer icon to replace 'Up' caret */
                     R.string.navigation_drawer_open,    /* "open drawer" description */
                     R.string.navigation_drawer_close) { /* "close drawer" description */
 
