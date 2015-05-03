@@ -16,6 +16,7 @@ import ch.bfh.mobicomp.leddr.core.UserAgentProvider;
 import ch.bfh.mobicomp.leddr.ui.AboutActivity;
 import ch.bfh.mobicomp.leddr.ui.BootstrapTimerActivity;
 import ch.bfh.mobicomp.leddr.ui.CheckInsListFragment;
+import ch.bfh.mobicomp.leddr.ui.DeviceActivity;
 import ch.bfh.mobicomp.leddr.ui.MainActivity;
 import ch.bfh.mobicomp.leddr.ui.NavigationDrawerFragment;
 import ch.bfh.mobicomp.leddr.ui.NewsActivity;
@@ -52,6 +53,7 @@ import retrofit.converter.GsonConverter;
                 UserActivity.class,
                 UserListFragment.class,
                 TimerService.class,
+                DeviceActivity.class,
                 AboutActivity.class
         }
 )

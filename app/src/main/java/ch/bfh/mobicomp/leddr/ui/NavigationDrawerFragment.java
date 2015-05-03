@@ -4,8 +4,10 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 
 import android.view.LayoutInflater;
@@ -20,9 +22,15 @@ import android.widget.ListView;
 
 import ch.bfh.mobicomp.leddr.Injector;
 import ch.bfh.mobicomp.leddr.R;
+import ch.bfh.mobicomp.leddr.db.LeddrContract;
+import ch.bfh.mobicomp.leddr.db.LeddrDbHelper;
 import ch.bfh.mobicomp.leddr.events.NavItemSelectedEvent;
+import ch.bfh.mobicomp.leddr.util.Ln;
 import ch.bfh.mobicomp.leddr.util.UIUtils;
 import com.squareup.otto.Bus;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -95,6 +103,56 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+//        LeddrDbHelper leddrDbHelper = new LeddrDbHelper(getActivity());
+//        SQLiteDatabase db = leddrDbHelper.getReadableDatabase();
+//
+//        // Define a projection that specifies which columns from the database
+//        // you will actually use after this query.
+//        String[] projection = {
+//                LeddrContract.DeviceEntry._ID,
+//                LeddrContract.DeviceEntry.COLUMN_NAME_NAME,
+//                LeddrContract.DeviceEntry.COLUMN_NAME_DEVICE_ID,
+//                LeddrContract.DeviceEntry.COLUMN_NAME_USER_ID
+//        };
+//
+//        // How you want the results sorted in the resulting Cursor
+//        String sortOrder =
+//                LeddrContract.DeviceEntry.COLUMN_NAME_NAME + " ASC";
+//
+//        String selection = null;
+//        String[] selectionArgs = null;
+//
+//        Cursor cursor = db.query(
+//                LeddrContract.DeviceEntry.TABLE_NAME,  // The table to query
+//                projection,                               // The columns to return
+//                selection,                                // The columns for the WHERE clause
+//                selectionArgs,                            // The values for the WHERE clause
+//                null,                                     // don't group the rows
+//                null,                                     // don't filter by row groups
+//                sortOrder                                 // The sort order
+//        );
+
+        List<String> menu = new ArrayList();
+        menu.add(getString(R.string.title_home));
+        menu.add(getString(R.string.title_timer));
+        menu.add(getString(R.string.title_device_list));
+        menu.add(getString(R.string.title_about));
+
+//        cursor.moveToFirst();
+//        while (!cursor.isAfterLast()) {
+//            long deviceId = cursor.getLong(
+//                    cursor.getColumnIndexOrThrow(LeddrContract.DeviceEntry._ID)
+//            );
+//            String deviceName = cursor.getString(
+//                    cursor.getColumnIndexOrThrow(LeddrContract.DeviceEntry.COLUMN_NAME_NAME)
+//            );
+//            menu.add(deviceName);
+//
+//            cursor.moveToNext();
+//        }
+//        cursor.close();
+
         drawerListView = (ListView) inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
         drawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -106,15 +164,17 @@ public class NavigationDrawerFragment extends Fragment {
                 getActivity(),
                 R.layout.drawer_list_item,
                 android.R.id.text1,
-                new String[] {
-                        getString(R.string.title_home),
-                        getString(R.string.title_timer),
-                        "Unit",
-                        "Color",
-                        "Time",
-                        "Installation",
-                        "About"
-                }));
+//                new String[] {
+//                        getString(R.string.title_home),
+//                        getString(R.string.title_timer),
+//                        "Unit",
+//                        "Color",
+//                        "Time",
+//                        "Installation",
+//                        "About"
+//                }
+                menu
+        ));
         drawerListView.setItemChecked(currentSelectedPosition, true);
         return drawerListView;
     }
@@ -135,7 +195,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         // set a custom shadow that overlays the main content when the drawer opens
         //drawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        // set up the drawer's list view with items and click listener
+        // set up the drawer's list view with data and click listener
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -146,7 +206,7 @@ public class NavigationDrawerFragment extends Fragment {
         drawerToggle = new ActionBarDrawerToggle(
                 getActivity(),                    /* host Activity */
                 NavigationDrawerFragment.this.drawerLayout,                    /* DrawerLayout object */
-                R.drawable.ic_drawer,             /* nav drawer image to replace 'Up' caret */
+//                R.drawable.ic_drawer,             /* nav drawer image to replace 'Up' caret */
                 R.string.navigation_drawer_open,  /* "open drawer" description for accessibility */
                 R.string.navigation_drawer_close  /* "close drawer" description for accessibility */
         ) {
@@ -163,6 +223,7 @@ public class NavigationDrawerFragment extends Fragment {
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
+                Ln.d("onDrawerOpened");
                 if (!isAdded()) {
                     return;
                 }

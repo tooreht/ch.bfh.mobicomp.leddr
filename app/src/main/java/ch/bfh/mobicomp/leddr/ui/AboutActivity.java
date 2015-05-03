@@ -26,7 +26,7 @@ public class AboutActivity extends BootstrapFragmentActivity {
 
         setContentView(R.layout.about);
 
-        setTitle(R.string.aboutTitle);
+        setTitle(R.string.title_about);
 
         getActionBar().setHomeButtonEnabled(true);
         getActionBar().setDisplayHomeAsUpEnabled(true);

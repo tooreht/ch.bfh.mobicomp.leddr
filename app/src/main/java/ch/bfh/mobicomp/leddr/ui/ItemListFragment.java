@@ -34,7 +34,7 @@ import java.util.List;
 
 
 /**
- * Base fragment for displaying a list of items that loads with a progress bar
+ * Base fragment for displaying a list of data that loads with a progress bar
  * visible
  *
  * @param <E>
@@ -47,14 +47,14 @@ public abstract class ItemListFragment<E> extends Fragment
     /**
      * @param args bundle passed to the loader by the LoaderManager
      * @return true if the bundle indicates a requested forced refresh of the
-     * items
+     * data
      */
     protected static boolean isForceRefresh(final Bundle args) {
         return args != null && args.getBoolean(FORCE_REFRESH, false);
     }
 
     /**
-     * List items provided to {@link #onLoadFinished(Loader, List)}
+     * List data provided to {@link #onLoadFinished(Loader, List)}
      */
     protected List<E> items = Collections.emptyList();
 
@@ -181,7 +181,7 @@ public abstract class ItemListFragment<E> extends Fragment
     }
 
     /**
-     * Force a refresh of the items displayed ignoring any cached items
+     * Force a refresh of the data displayed ignoring any cached data
      */
     protected void forceRefresh() {
         final Bundle bundle = new Bundle();
@@ -231,7 +231,7 @@ public abstract class ItemListFragment<E> extends Fragment
     }
 
     /**
-     * Create adapter to display items
+     * Create adapter to display data
      *
      * @return adapter
      */
@@ -242,7 +242,7 @@ public abstract class ItemListFragment<E> extends Fragment
     }
 
     /**
-     * Create adapter to display items
+     * Create adapter to display data
      *
      * @param items
      * @return adapter

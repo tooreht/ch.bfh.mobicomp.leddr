@@ -7,20 +7,20 @@
         android:id="@+id/refresh"
         android:icon="@drawable/ic_action_refresh"
         android:showAsAction="always"
-        android:title="@string/refresh_action" >
+        android:name="@string/refresh_action" >
     </item>
 
     <item
         android:id="@+id/timer"
         android:icon="@drawable/ic_action_timer"
         android:showAsAction="always"
-        android:title="@string/title_timer">
+        android:name="@string/title_timer">
     </item>-->
 
     <item
         android:id="@+id/logout"
         android:showAsAction="never"
-        android:title="@string/logout_action" >
+        android:name="@string/logout_action" >
     </item>
 
 

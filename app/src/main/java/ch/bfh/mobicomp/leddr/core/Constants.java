@@ -96,6 +96,7 @@ public final class Constants {
         private Extra() {}
 
         public static final String NEWS_ITEM = "news_item";
+        public static final String DEVICE_ITEM = "device_item";
 
         public static final String USER = "user";
 

@@ -9,7 +9,7 @@
         android:id="@+id/about"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/aboutTitle"
+        android:text="@string/title_about"
         style="@style/TimerChronometer"
         />
 
@@ -17,7 +17,7 @@
         android:id="@+id/aboutText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/aboutText"
+        android:text="@string/text_about"
         style="@style/aboutText"
         />
 </LinearLayout>
