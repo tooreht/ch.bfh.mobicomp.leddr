@@ -91,4 +91,17 @@ public class DeviceListFragment extends ListFragment implements
     public void onLoaderReset(Loader<Cursor> loader) {
         adapter.swapCursor(null);
     }
+
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // When in two-pane layout, set the listview to highlight the selected list item
+        // (We do this during onStart because at the point the listview is available.)
+        if (getFragmentManager().findFragmentById(R.id.device_list_fragment) != null) {
+            getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        }
+    }
 }

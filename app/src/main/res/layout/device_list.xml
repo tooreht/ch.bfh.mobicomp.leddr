@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <fragment
-        android:id="@android:id/list"
+        android:id="@+id/device_list_fragment"
         android:name="ch.bfh.mobicomp.leddr.ui.DeviceListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

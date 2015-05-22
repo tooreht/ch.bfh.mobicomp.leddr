@@ -184,11 +184,7 @@ public class MainActivity extends BootstrapFragmentActivity {
 
     private void initScreen() {
         if (userHasAuthenticated) {
-
-            final FragmentManager fragmentManager = getFragmentManager();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, new CarouselFragment())
-                    .commit();
+            navigateToHome();
         }
 
     }
@@ -240,14 +236,32 @@ public class MainActivity extends BootstrapFragmentActivity {
         }
     }
 
+    private void navigateToHome() {
+        final FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, new CarouselFragment())
+                .commit();
+    }
+
     private void navigateToTimer() {
         final Intent i = new Intent(this, BootstrapTimerActivity.class);
         startActivity(i);
     }
 
     private void navigateToDevices() {
-        final Intent i = new Intent(this, DeviceActivity.class);
-        startActivity(i);
+//        final Intent i = new Intent(this, DeviceActivity.class);
+//        startActivity(i);
+
+        // Create an instance of ExampleFragment
+        DeviceListFragment deviceListFragment = new DeviceListFragment();
+
+        // In case this activity was started with special instructions from an Intent,
+        // pass the Intent's extras to the fragment as arguments
+        deviceListFragment.setArguments(getIntent().getExtras());
+
+        // Add the fragment to the 'container' FrameLayout
+        getFragmentManager().beginTransaction()
+                .replace(R.id.container, deviceListFragment).commit();
     }
 
     private void navigateToAbout() {
@@ -264,6 +278,7 @@ public class MainActivity extends BootstrapFragmentActivity {
             case 0:
                 // Home
                 // do nothing as we're already on the home screen.
+                navigateToHome();
                 break;
             case 1:
                 // Timer
