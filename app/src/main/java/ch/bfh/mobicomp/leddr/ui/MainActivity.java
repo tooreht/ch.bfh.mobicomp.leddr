@@ -249,8 +249,6 @@ public class MainActivity extends BootstrapFragmentActivity {
     }
 
     private void navigateToDevices() {
-//        final Intent i = new Intent(this, DeviceActivity.class);
-//        startActivity(i);
 
         // Create an instance of ExampleFragment
         DeviceListFragment deviceListFragment = new DeviceListFragment();
