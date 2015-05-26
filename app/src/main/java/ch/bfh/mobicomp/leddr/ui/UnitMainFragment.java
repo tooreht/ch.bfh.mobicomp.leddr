@@ -1,6 +1,5 @@
 package ch.bfh.mobicomp.leddr.ui;
 
-import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -13,12 +12,12 @@ import ch.bfh.mobicomp.leddr.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link UnitFragment.OnFragmentInteractionListener} interface
+ * {@link UnitMainFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link UnitFragment#newInstance} factory method to
+ * Use the {@link UnitMainFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class UnitFragment extends Fragment {
+public class UnitMainFragment extends Fragment {
 
     // the fragment initialization parameter
     private static final String UNIT = "unit";
@@ -30,18 +29,18 @@ public class UnitFragment extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param unit the led unit to be displayed.
-     * @return A new instance of fragment UnitFragment.
+     * //@param unit the led unit to be displayed.
+     * @return A new instance of fragment UnitMainFragment.
      */
-    public static UnitFragment newInstance(String unit) {
-        UnitFragment fragment = new UnitFragment();
+    public static UnitMainFragment newInstance() {
+        UnitMainFragment fragment = new UnitMainFragment();
         Bundle args = new Bundle();
-        args.putString(UNIT, unit);
+        //args.putString(UNIT, unit);
         fragment.setArguments(args);
         return fragment;
     }
 
-    public UnitFragment() {
+    public UnitMainFragment() {
         // Required empty public constructor
     }
 
@@ -57,7 +56,7 @@ public class UnitFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_unit, container, false);
+        return inflater.inflate(R.layout.fragment_unit_main, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

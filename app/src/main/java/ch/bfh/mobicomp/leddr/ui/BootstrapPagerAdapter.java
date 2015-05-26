@@ -38,15 +38,15 @@ public class BootstrapPagerAdapter extends FragmentPagerAdapter {
         final Fragment result;
         switch (position) {
             case 0:
-                result = UnitFragment.newInstance("Labor Test Unit 1");
+                result = UnitMainFragment.newInstance();
                 //result = new NewsListFragment();
                 break;
             case 1:
-                result = UnitFragment.newInstance("Labor Test Unit 2");
+                result = UnitColorFragment.newInstance();
                 //result = new UserListFragment();
                 break;
             case 2:
-                result = UnitFragment.newInstance("Labor Test Unit 3");
+                result = UnitIntensityFragment.newInstance();
                 //result = new CheckInsListFragment();
                 break;
             default:
@@ -63,11 +63,11 @@ public class BootstrapPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(final int position) {
         switch (position) {
             case 0:
-                return resources.getString(R.string.page_unit1);
+                return resources.getString(R.string.page_unit_main);
             case 1:
-                return resources.getString(R.string.page_unit2);
+                return resources.getString(R.string.page_unit_color);
             case 2:
-                return resources.getString(R.string.page_unit3);
+                return resources.getString(R.string.page_unit_intensity);
             default:
                 return null;
         }
