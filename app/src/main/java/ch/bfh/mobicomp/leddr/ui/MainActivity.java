@@ -3,6 +3,7 @@ package ch.bfh.mobicomp.leddr.ui;
 import android.accounts.OperationCanceledException;
 import android.app.FragmentManager;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
@@ -50,6 +51,7 @@ public class MainActivity extends BootstrapFragmentActivity {
     private ActionBarDrawerToggle drawerToggle;
     private CharSequence drawerTitle;
     private CharSequence title;
+
     private NavigationDrawerFragment navigationDrawerFragment;
 
     @Override
@@ -76,7 +78,7 @@ public class MainActivity extends BootstrapFragmentActivity {
                 // Gets the data repository in write mode
                 SQLiteDatabase db = leddrDbHelper.getWritableDatabase();
 
-                for (int i = 0; i < 100; i++) {
+                for (int i = 0; i < 10; i++) {
                     int id = i;
                     String name = String.format("%s %s", "LED Brick", i);
                     String uid = String.format("%s%s", "$5G2Fdfh66hsdfDFB#(54", i);
@@ -180,7 +182,6 @@ public class MainActivity extends BootstrapFragmentActivity {
             drawerToggle.onConfigurationChanged(newConfig);
         }
     }
-
 
     private void initScreen() {
         if (userHasAuthenticated) {

@@ -15,8 +15,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:inputType="text" />
+        android:id="@+id/addDeviceName"
+        android:inputType="text"
+        android:phoneNumber="true" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,7 +28,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/addDeviceId"
         android:editable="false"
         android:inputType="text" />
 
