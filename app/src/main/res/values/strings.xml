@@ -45,11 +45,13 @@
     <string name="title_home">Home</string>
 
     <!-- UnitFragments -->
-    <string name="page_unit1">LED Unit 1</string>
-    <string name="page_unit2">LED Unit 2</string>
-    <string name="page_unit3">LED Unit 3</string>
+    <string name="page_unit_main">Main Settings</string>
+    <string name="page_unit_color">Color Settings</string>
+    <string name="page_unit_intensity">Intensity Settings</string>
     <string name="unit">Power</string>
     <string name="powerButton">ON/OFF</string>
+    <string name="color">Color</string>
+    <string name="intensity">Intensity</string>
 
     <!-- Devices -->
     <string name="title_device_list">Devices</string>
