@@ -3,7 +3,7 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<item
+    <item
         android:id="@+id/refresh"
         android:icon="@drawable/ic_action_refresh"
         android:showAsAction="always"
@@ -15,11 +15,11 @@
         android:icon="@drawable/ic_action_timer"
         android:showAsAction="always"
         android:name="@string/title_timer">
-    </item>-->
+    </item>
 
     <item
         android:id="@+id/logout"
-        android:showAsAction="never"
+        android:showAsAction="always"
         android:name="@string/logout_action" >
     </item>
 

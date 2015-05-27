@@ -19,7 +19,6 @@ import ch.bfh.mobicomp.leddr.R;
  * created by sw
  */
 public class AboutActivity extends BootstrapFragmentActivity {
-    Button btn;
 
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

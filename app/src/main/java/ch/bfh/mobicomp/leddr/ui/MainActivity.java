@@ -228,9 +228,9 @@ public class MainActivity extends BootstrapFragmentActivity {
             case android.R.id.home:
 //                menuDrawer.toggleMenu();
                 return true;
-            /*case R.id.timer:
+            case R.id.timer:
                 navigateToTimer();
-                return true;*/
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -262,6 +262,11 @@ public class MainActivity extends BootstrapFragmentActivity {
                 .replace(R.id.container, deviceListFragment).commit();
     }
 
+    private void navigateToAddDevice() {
+        final Intent i = new Intent(this, AddDeviceActivity.class);
+        startActivity(i);
+    }
+
     private void navigateToAbout() {
        final Intent i = new Intent(this, AboutActivity.class);
         startActivity(i);
@@ -275,7 +280,6 @@ public class MainActivity extends BootstrapFragmentActivity {
         switch(event.getItemPosition()) {
             case 0:
                 // Home
-                // do nothing as we're already on the home screen.
                 navigateToHome();
                 break;
             case 1:
@@ -287,6 +291,9 @@ public class MainActivity extends BootstrapFragmentActivity {
                 navigateToDevices();
                 break;
             case 3:
+                navigateToAddDevice();
+                break;
+            case 4:
                 // About
                 navigateToAbout();
                 break;

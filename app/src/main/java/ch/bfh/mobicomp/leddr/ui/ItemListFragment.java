@@ -439,7 +439,7 @@ public abstract class ItemListFragment<E> extends Fragment
      * @param id
      */
     public void onListItemClick(final ListView l, final View v,
-                                final int position, final long id) {
+                                     final int position, final long id) {
     }
 
     /**

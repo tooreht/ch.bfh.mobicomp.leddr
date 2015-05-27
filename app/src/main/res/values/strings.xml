@@ -56,6 +56,12 @@
     <string name="error_loading_devices">Loading devices failed</string>
     <string name="no_devices">No Devices</string>
 
+    <!-- Add device -->
+    <string name="title_add_device">Add Device</string>
+    <string name="add">Add</string>
+    <string name="device_id">DeviceID</string>
+    <string name="name">Name</string>
+
     <!-- About -->
     <string name="title_about">About</string>
     <string name="text_about">Copyright by the LEDDR Group. LEDDR is some serious stuff made to enjoy the leds in their whole awesomeness. Please send error reports to

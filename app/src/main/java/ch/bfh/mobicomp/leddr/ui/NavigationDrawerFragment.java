@@ -137,6 +137,7 @@ public class NavigationDrawerFragment extends Fragment {
         menu.add(getString(R.string.title_home));
         menu.add(getString(R.string.title_timer));
         menu.add(getString(R.string.title_device_list));
+        menu.add(getString(R.string.title_add_device));
         menu.add(getString(R.string.title_about));
 
 //        cursor.moveToFirst();

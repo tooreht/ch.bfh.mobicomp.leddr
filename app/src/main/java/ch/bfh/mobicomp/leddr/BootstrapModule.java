@@ -14,6 +14,7 @@ import ch.bfh.mobicomp.leddr.core.RestErrorHandler;
 import ch.bfh.mobicomp.leddr.core.TimerService;
 import ch.bfh.mobicomp.leddr.core.UserAgentProvider;
 import ch.bfh.mobicomp.leddr.ui.AboutActivity;
+import ch.bfh.mobicomp.leddr.ui.AddDeviceActivity;
 import ch.bfh.mobicomp.leddr.ui.BootstrapTimerActivity;
 import ch.bfh.mobicomp.leddr.ui.CheckInsListFragment;
 import ch.bfh.mobicomp.leddr.ui.MainActivity;
@@ -52,7 +53,8 @@ import retrofit.converter.GsonConverter;
                 UserActivity.class,
                 UserListFragment.class,
                 TimerService.class,
-                AboutActivity.class
+                AboutActivity.class,
+                AddDeviceActivity.class
         }
 )
 public class BootstrapModule {
