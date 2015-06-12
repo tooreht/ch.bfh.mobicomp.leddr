@@ -1,5 +1,6 @@
 package ch.bfh.mobicomp.leddr.ui;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -69,8 +70,13 @@ public class DeviceListFragment extends ListFragment implements
             String deviceName = deviceCursor.getString(
                     deviceCursor.getColumnIndex(LeddrContract.DeviceEntry.COLUMN_NAME_NAME)
             );
-            // Start the detail device activity or replace the fragment here...
-            Toaster.showShort(getActivity(), deviceName);
+
+            Toaster.showShort(getActivity(),"Load " + deviceName);
+
+            Intent intent  = new Intent(getActivity(), MainActivity.class);
+            intent.putExtra("DeviceName", deviceName);
+            //intent.putExtra("DeviceId", id);
+            startActivity(intent);
         }
         deviceCursor.close();
     }

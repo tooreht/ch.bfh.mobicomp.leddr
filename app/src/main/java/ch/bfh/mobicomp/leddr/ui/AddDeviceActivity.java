@@ -2,6 +2,7 @@ package ch.bfh.mobicomp.leddr.ui;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -61,6 +62,11 @@ public class AddDeviceActivity extends BootstrapFragmentActivity {
                         values);
 
                 Toaster.showShort(AddDeviceActivity.this,"added " + name + " to the DB");
+
+                Intent intent  = new Intent(AddDeviceActivity.this.getApplicationContext(), MainActivity.class);
+                intent.putExtra("DeviceName", name);
+                intent.putExtra("DeviceId", id);
+                startActivity(intent);
             }
         });
     }

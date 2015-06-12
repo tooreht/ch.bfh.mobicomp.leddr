@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
+import com.github.kevinsawicki.wishlist.Toaster;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
@@ -109,7 +110,12 @@ public class MainActivity extends BootstrapFragmentActivity {
             setContentView(R.layout.main_activity);
         }
 
-        setTitle(R.string.title_home);
+
+
+        String deviceName = "no device selected";
+        String deviceId = "no device selected";
+
+        setTitle(deviceName);
 
         // View injection with Butterknife
         ButterKnife.inject(this);
@@ -157,6 +163,24 @@ public class MainActivity extends BootstrapFragmentActivity {
 
 
         checkAuth();
+
+        Intent intent = getIntent();
+        // Get the extras (if there are any)
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            if (extras.containsKey("DeviceName")) {
+                deviceName = intent.getExtras().getString("DeviceName");
+            }
+            if (extras.containsKey("DeviceName")) {
+                deviceId = intent.getExtras().getString("DeviceId");
+            }
+        } else {
+            Toaster.showShort(MainActivity.this, "Please select a device");
+            navigateToDevices();
+        }
+
+
+        setTitle(deviceName);
 
     }
 

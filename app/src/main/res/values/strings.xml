@@ -49,6 +49,7 @@
     <string name="page_unit_color">Color Settings</string>
     <string name="page_unit_intensity">Intensity Settings</string>
     <string name="unit">Power</string>
+    <string name="selectedUnit">Selected Unit:</string>
     <string name="powerButton">ON/OFF</string>
     <string name="color">Color</string>
     <string name="intensity">Intensity</string>
