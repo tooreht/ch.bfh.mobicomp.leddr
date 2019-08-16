@@ -8,7 +8,7 @@ import android.accounts.AccountsException;
 import android.app.Activity;
 import android.os.Bundle;
 
-import java.io.IOException;
+import .io.IOException;
 
 import static android.accounts.AccountManager.KEY_AUTHTOKEN;
 import static ch.bfh.mobicomp.leddr.core.Constants.Auth.AUTHTOKEN_TYPE;

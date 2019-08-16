@@ -3,25 +3,25 @@ package ch.bfh.mobicomp.leddr.util;
 import android.os.Handler;
 import android.os.Looper;
 
-import java.io.InterruptedIOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.concurrent.Callable;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
+import .io.InterruptedIOException;
+import .util.ArrayList;
+import .util.Arrays;
+import .util.concurrent.Callable;
+import .util.concurrent.CountDownLatch;
+import .util.concurrent.Executor;
+import .util.concurrent.Executors;
+import .util.concurrent.FutureTask;
 
 /**
  * Originally from RoboGuice:
- * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main/java/roboguice/util/SafeAsyncTask.java
+ * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main//roboguice/util/SafeAsyncTask.
  * <p/>
  * A class similar but unrelated to android's {@link android.os.AsyncTask}.
  * <p/>
  * Unlike AsyncTask, this class properly propagates exceptions.
  * <p/>
  * If you're familiar with AsyncTask and are looking for {@link android.os.AsyncTask#doInBackground(Object[])},
- * we've named it {@link #call()} here to conform with java 1.5's {@link java.util.concurrent.Callable} interface.
+ * we've named it {@link #call()} here to conform with  1.5's {@link .util.concurrent.Callable} interface.
  * <p/>
  * Current limitations: does not yet handle progress, although it shouldn't be
  * hard to add.

@@ -27,7 +27,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.squareup.otto.Bus;
 
-import javax.inject.Singleton;
+import x.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;

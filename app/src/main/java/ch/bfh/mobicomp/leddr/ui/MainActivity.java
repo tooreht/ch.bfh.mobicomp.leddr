@@ -18,7 +18,7 @@ import android.view.Window;
 import com.github.kevinsawicki.wishlist.Toaster;
 import com.squareup.otto.Subscribe;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import butterknife.ButterKnife;
 import ch.bfh.mobicomp.leddr.BootstrapServiceProvider;

@@ -16,10 +16,10 @@ import ch.bfh.mobicomp.leddr.authenticator.LogoutService;
 import ch.bfh.mobicomp.leddr.core.News;
 import com.github.kevinsawicki.wishlist.SingleTypeAdapter;
 
-import java.util.Collections;
-import java.util.List;
+import .util.Collections;
+import .util.List;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import static ch.bfh.mobicomp.leddr.core.Constants.Extra.NEWS_ITEM;
 

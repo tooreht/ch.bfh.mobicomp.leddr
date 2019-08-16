@@ -20,7 +20,7 @@ import ch.bfh.mobicomp.leddr.core.TimerTickEvent;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import butterknife.InjectView;
 

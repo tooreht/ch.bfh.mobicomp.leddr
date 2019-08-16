@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 import com.bfh.mobicomp.mobicomp.core.BootstrapService;
 import com.bfh.mobicomp.mobicomp.core.User;
 
-import java.util.List;
+import .util.List;
 
 import org.junit.Ignore;
 import org.junit.Test;

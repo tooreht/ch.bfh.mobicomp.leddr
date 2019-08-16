@@ -1,6 +1,6 @@
 package ch.bfh.mobicomp.leddr.core;
 
-import java.util.List;
+import .util.List;
 
 public class UsersWrapper {
 

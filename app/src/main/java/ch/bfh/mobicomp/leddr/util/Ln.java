@@ -5,12 +5,12 @@ import android.app.Application;
 import android.content.pm.ApplicationInfo;
 import android.util.Log;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 
 /**
  * Originally from RoboGuice:
- * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main/java/roboguice/util/Ln.java
+ * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main//roboguice/util/Ln.
  * <p/>
  * A more natural android logging facility.
  * <p/>

@@ -1,6 +1,6 @@
 package ch.bfh.mobicomp.leddr.events;
 
-import java.io.Serializable;
+import .io.Serializable;
 
 public class UnAuthorizedErrorEvent {
     private Serializable cause;

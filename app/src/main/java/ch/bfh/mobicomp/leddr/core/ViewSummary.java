@@ -1,7 +1,7 @@
 
 package ch.bfh.mobicomp.leddr.core;
 
-import java.io.Serializable;
+import .io.Serializable;
 
 /**
  * View summary

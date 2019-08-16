@@ -29,10 +29,10 @@ import ch.bfh.mobicomp.leddr.util.Ln;
 import ch.bfh.mobicomp.leddr.util.UIUtils;
 import com.squareup.otto.Bus;
 
-import java.util.ArrayList;
-import java.util.List;
+import .util.ArrayList;
+import .util.List;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

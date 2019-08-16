@@ -8,12 +8,12 @@ import android.telephony.TelephonyManager;
 import ch.bfh.mobicomp.leddr.util.Ln;
 import ch.bfh.mobicomp.leddr.util.Strings;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Locale;
+import .lang.reflect.Method;
+import .util.ArrayList;
+import .util.Locale;
 
-import javax.inject.Inject;
-import javax.inject.Provider;
+import x.inject.Inject;
+import x.inject.Provider;
 
 
 /**

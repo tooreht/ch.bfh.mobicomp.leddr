@@ -29,8 +29,8 @@ import com.github.kevinsawicki.wishlist.SingleTypeAdapter;
 import com.github.kevinsawicki.wishlist.Toaster;
 import com.github.kevinsawicki.wishlist.ViewUtils;
 
-import java.util.Collections;
-import java.util.List;
+import .util.Collections;
+import .util.List;
 
 
 /**

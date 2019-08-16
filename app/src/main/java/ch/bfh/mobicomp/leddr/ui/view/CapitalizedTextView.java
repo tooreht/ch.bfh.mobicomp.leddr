@@ -7,8 +7,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.Button;
 
-import java.util.Hashtable;
-import java.util.Locale;
+import .util.Hashtable;
+import .util.Locale;
 
 /**
  * A button who's text is always uppercase which uses the roboto font.

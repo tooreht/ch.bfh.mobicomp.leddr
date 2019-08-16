@@ -2,7 +2,7 @@ package ch.bfh.mobicomp.leddr.core;
 
 import android.text.TextUtils;
 
-import java.io.Serializable;
+import .io.Serializable;
 
 public class User implements Serializable {
 
