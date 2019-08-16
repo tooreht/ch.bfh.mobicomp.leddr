@@ -12,9 +12,9 @@ import android.widget.ImageView;
 
 import ch.bfh.mobicomp.leddr.util.Ln;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import .io.File;
+import .io.IOException;
+import .io.RandomAccessFile;
 
 import static android.graphics.Bitmap.Config.ARGB_8888;
 import static android.graphics.Color.WHITE;

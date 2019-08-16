@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.util.Log;
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import ch.bfh.mobicomp.leddr.core.Constants;
 

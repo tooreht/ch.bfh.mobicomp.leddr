@@ -7,7 +7,7 @@ import ch.bfh.mobicomp.leddr.R;
 import ch.bfh.mobicomp.leddr.R.drawable;
 import com.github.kevinsawicki.wishlist.SingleTypeAdapter;
 
-import java.util.List;
+import .util.List;
 
 /**
  * List adapter that colors rows in alternating colors

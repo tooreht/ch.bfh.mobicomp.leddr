@@ -7,7 +7,7 @@ import android.widget.HeaderViewListAdapter;
 import android.widget.ListView;
 import android.widget.ListView.FixedViewInfo;
 
-import java.util.ArrayList;
+import .util.ArrayList;
 
 /**
  * Utility adapter that supports adding headers and footers

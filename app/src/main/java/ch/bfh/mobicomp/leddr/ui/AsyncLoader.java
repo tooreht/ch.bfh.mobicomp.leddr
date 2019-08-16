@@ -9,7 +9,7 @@ import android.content.Context;
  * Loader which extends AsyncTaskLoaders and handles caveats as pointed out in
  * http://code.google.com/p/android/issues/detail?id=14944.
  * <p/>
- * Based on CursorLoader.java in the Fragment compatibility package
+ * Based on CursorLoader. in the Fragment compatibility package
  *
  * @param <D> data type
  * @author Alexander Blom (me@alexanderblom.se)

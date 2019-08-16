@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.util.Hashtable;
-import java.util.Locale;
+import .util.Hashtable;
+import .util.Locale;
 
 import ch.bfh.mobicomp.leddr.R;
 

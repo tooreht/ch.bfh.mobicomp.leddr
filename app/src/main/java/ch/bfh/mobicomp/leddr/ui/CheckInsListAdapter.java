@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import ch.bfh.mobicomp.leddr.R;
 import ch.bfh.mobicomp.leddr.core.CheckIn;
 
-import java.util.List;
+import .util.List;
 
 
 public class CheckInsListAdapter extends AlternatingColorListAdapter<CheckIn> {

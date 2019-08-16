@@ -7,7 +7,7 @@ import android.app.Activity;
 import ch.bfh.mobicomp.leddr.authenticator.ApiKeyProvider;
 import ch.bfh.mobicomp.leddr.core.BootstrapService;
 
-import java.io.IOException;
+import .io.IOException;
 
 import retrofit.RestAdapter;
 

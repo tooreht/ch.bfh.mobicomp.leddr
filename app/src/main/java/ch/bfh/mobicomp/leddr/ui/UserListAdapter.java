@@ -9,8 +9,8 @@ import ch.bfh.mobicomp.leddr.core.User;
 import com.github.kevinsawicki.wishlist.SingleTypeAdapter;
 import com.squareup.picasso.Picasso;
 
-import java.text.SimpleDateFormat;
-import java.util.List;
+import .text.SimpleDateFormat;
+import .util.List;
 
 /**
  * Adapter to display a list of traffic items

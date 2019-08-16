@@ -13,11 +13,11 @@ import com.bfh.mobicomp.mobicomp.core.User;
 import com.bfh.mobicomp.mobicomp.core.UserAgentProvider;
 import com.github.kevinsawicki.http.HttpRequest;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
+import .io.BufferedReader;
+import .io.ByteArrayInputStream;
+import .io.IOException;
+import .io.InputStreamReader;
+import .util.List;
 
 import org.junit.Before;
 import org.junit.Test;

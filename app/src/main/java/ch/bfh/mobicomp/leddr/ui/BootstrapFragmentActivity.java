@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import ch.bfh.mobicomp.leddr.Injector;
 import com.squareup.otto.Bus;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import butterknife.ButterKnife;
 

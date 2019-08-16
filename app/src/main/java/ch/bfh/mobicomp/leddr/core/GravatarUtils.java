@@ -3,13 +3,13 @@ package ch.bfh.mobicomp.leddr.core;
 
 import android.text.TextUtils;
 
-import java.io.UnsupportedEncodingException;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
+import .io.UnsupportedEncodingException;
+import .math.BigInteger;
+import .security.MessageDigest;
+import .security.NoSuchAlgorithmException;
+import .util.Arrays;
 
-import static java.util.Locale.US;
+import static .util.Locale.US;
 
 /**
  * Helper to get a gravatar hash for an email

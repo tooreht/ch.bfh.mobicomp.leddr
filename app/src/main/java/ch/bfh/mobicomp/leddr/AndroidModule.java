@@ -11,7 +11,7 @@ import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 import android.view.inputmethod.InputMethodManager;
 
-import javax.inject.Singleton;
+import x.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;

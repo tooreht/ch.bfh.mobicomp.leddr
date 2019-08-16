@@ -9,7 +9,7 @@ import ch.bfh.mobicomp.leddr.core.Constants;
 import ch.bfh.mobicomp.leddr.util.Ln;
 import ch.bfh.mobicomp.leddr.util.SafeAsyncTask;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 
 /**

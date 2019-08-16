@@ -1,26 +1,26 @@
 package ch.bfh.mobicomp.leddr.util;
 
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.security.InvalidParameterException;
-import java.security.MessageDigest;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import .io.IOException;
+import .io.InputStream;
+import .io.InputStreamReader;
+import .io.Reader;
+import .io.StringWriter;
+import .io.Writer;
+import .security.InvalidParameterException;
+import .security.MessageDigest;
+import .util.Arrays;
+import .util.Collection;
+import .util.HashMap;
+import .util.Iterator;
+import .util.Map;
 
 public class Strings {
     private static final int DEFAULT_BUFFER_SIZE = 1024 * 4;
 
     /**
      * Originally from RoboGuice:
-     * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main/java/roboguice/util/Strings.java
+     * https://github.com/roboguice/roboguice/blob/master/roboguice/src/main//roboguice/util/Strings.
      * Like join, but allows for a distinct final delimiter.  For english sentences such
      * as "Alice, Bob and Charlie" use ", " and " and " as the delimiters.
      *
@@ -123,7 +123,7 @@ public class Strings {
     }
 
     public static String md5(String s) {
-        // http://stackoverflow.com/questions/1057041/difference-between-java-and-php5-md5-hash
+        // http://stackoverflow.com/questions/1057041/difference-between--and-php5-md5-hash
         // http://code.google.com/p/roboguice/issues/detail?id=89
         try {
 

@@ -19,7 +19,7 @@ import com.squareup.otto.Bus;
 import com.squareup.otto.Produce;
 import com.squareup.otto.Subscribe;
 
-import javax.inject.Inject;
+import x.inject.Inject;
 
 import static ch.bfh.mobicomp.leddr.core.Constants.Notification.TIMER_NOTIFICATION_ID;
 
@@ -76,7 +76,7 @@ public class TimerService extends Service {
             startTimer();
 
             // Run as foreground service: http://stackoverflow.com/a/3856940/5210
-            // Another example: https://github.com/commonsguy/cw-android/blob/master/Notifications/FakePlayer/src/com/commonsware/android/fakeplayerfg/PlayerService.java
+            // Another example: https://github.com/commonsguy/cw-android/blob/master/Notifications/FakePlayer/src/com/commonsware/android/fakeplayerfg/PlayerService.
             startForeground(TIMER_NOTIFICATION_ID, getNotification(getString(R.string.timer_running)));
         }
 

@@ -45,9 +45,9 @@ import com.github.kevinsawicki.wishlist.Toaster;
 import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
-import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.List;
+import x.inject.Inject;
+import .util.ArrayList;
+import .util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
